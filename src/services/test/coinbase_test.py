@@ -29,7 +29,7 @@ class SubscribeSerializeTestCase(TestCase):
 class ConsumeDeserializeTestCase(TestCase):
     def setUp(self):
         super().setUp()
-        
+
         self.message = {
             'type': 'match',
             'trade_id': 151784501,
