@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    volumes:
+      - .:/src
+    command: ['python3', './src/app.py']
+
+  test:
+    build: .
+    volumes:
+      - .:/src
+    command: ['python3', './src/test.py']
